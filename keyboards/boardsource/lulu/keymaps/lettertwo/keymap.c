@@ -19,6 +19,10 @@ enum layers {
 #define SFT_ESC LSFT_T(KC_ESC)
 #define SFT_ENT RSFT_T(KC_ENT)
 
+// See https://getreuer.info/posts/keyboards/palettefx/index.html
+#define PALETTEFX_ENABLE_ALL_EFFECTS
+#define PALETTEFX_ENABLE_ALL_PALETTES
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* QWERTY
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -60,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_MINS,
   XXXXXXX, KC_TILD, KC_LPRN, KC_RPRN, KC_CIRC, KC_PIPE,                   XXXXXXX, XXXXXXX, KC_SLSH, KC_BSLS, XXXXXXX, XXXXXXX,
   CW_TOGG, KC_EXLM, KC_LCBR, KC_RCBR, KC_EQL,  KC_AMPR,                   KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, XXXXXXX,
-  _______, KC_MINS, KC_LBRC, KC_RBRC, KC_PLUS, XXXXXXX, RGB_TOG, RGB_TOG, XXXXXXX, XXXXXXX,   KC_LT,   KC_GT, KC_QUES, KC_DQUO,
+  _______, KC_MINS, KC_LBRC, KC_RBRC, KC_PLUS, XXXXXXX, LUMINO,  LUMINO,  XXXXXXX, XXXXXXX,   KC_LT,   KC_GT, KC_QUES, KC_DQUO,
                              XXXXXXX, _______, _______, KC_UNDS, KC_UNDS, _______, _______, XXXXXXX
 ),
 /* RAISE
@@ -81,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_MINS,
   XXXXXXX, KC_TILD, KC_LPRN, KC_RPRN, KC_CIRC, KC_PIPE,                   XXXXXXX, XXXXXXX, KC_SLSH, KC_BSLS, XXXXXXX, XXXXXXX,
   CW_TOGG, KC_EXLM, KC_LCBR, KC_RCBR, KC_EQL,  KC_AMPR,                   KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, XXXXXXX,
-  _______, KC_MINS, KC_LBRC, KC_RBRC, KC_PLUS, XXXXXXX, RGB_TOG, RGB_TOG, XXXXXXX, XXXXXXX,   KC_LT,   KC_GT, KC_QUES, KC_DQUO,
+  _______, KC_MINS, KC_LBRC, KC_RBRC, KC_PLUS, XXXXXXX, LUMINO,  LUMINO,  XXXXXXX, XXXXXXX,   KC_LT,   KC_GT, KC_QUES, KC_DQUO,
                              XXXXXXX, _______, _______, KC_UNDS, KC_UNDS, _______, _______, XXXXXXX
 ),
 /* ADJUST
@@ -102,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                       KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_SLEP,
   QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_TOG, RGB_TOG, XXXXXXX, KC_MUTE, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RM_NEXT, RM_HUEU, XXXXXXX, KC_MUTE, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                              _______, _______, _______, KC_MPLY, KC_MUTE, _______, _______, _______
   )
 };
