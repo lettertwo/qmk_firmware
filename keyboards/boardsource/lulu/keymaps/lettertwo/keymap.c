@@ -19,10 +19,6 @@ enum layers {
 #define SFT_ESC LSFT_T(KC_ESC)
 #define SFT_ENT RSFT_T(KC_ENT)
 
-// See https://getreuer.info/posts/keyboards/palettefx/index.html
-#define PALETTEFX_ENABLE_ALL_EFFECTS
-#define PALETTEFX_ENABLE_ALL_PALETTES
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* QWERTY
  * ,-----------------------------------------.                    ,-----------------------------------------.
