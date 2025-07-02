@@ -120,3 +120,9 @@ const char PROGMEM chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] = LAYOUT(
   '*', 'L', 'L', 'L', 'L', 'L', '*', '*', 'R', 'R', 'R', 'R', 'R', '*',
                  '*', '*', '*', '*', '*', '*', '*', '*'
 );
+
+#ifdef OLED_ENABLE
+#include <stdio.h>
+#include <oled.c>
+#endif
+
