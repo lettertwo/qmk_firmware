@@ -1,6 +1,7 @@
 #pragma once
 
 #define MASTER_RIGHT
+#define ENABLE_COMPILE_KEYCODE
 #define PERMISSIVE_HOLD
 #define RETRO_TAPPING
 #define HOLD_ON_OTHER_KEY_PRESS
